@@ -28,7 +28,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     background-color: black;
     font-family: $typFontFamily;
@@ -38,9 +38,8 @@ body {
 
 #container {
     width: 375px;
-    height: 100vh;
-    // padding: 90px 0px 0px 0px;
-    padding: 0px;
+    height: 100%;
+    padding: 30px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
