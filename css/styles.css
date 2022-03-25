@@ -58,6 +58,7 @@ body {
   text-align: center;
   font-weight: 600;
   line-height: 1.2em;
+  font-size: 1.8em;
 }
 
 #container #info #description {
@@ -131,8 +132,10 @@ body {
   text-align: center;
 }
 
-#container #main #form #terms strong {
+#container #main #form #terms a {
   color: #ff7a7a;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 footer {
@@ -149,5 +152,73 @@ footer .attribution {
 footer .attribution a {
   color: #6055a5;
   text-decoration: none;
+}
+
+@media (min-width: 700px) {
+  body {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #container {
+    width: 100%;
+    height: 80vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    background-image: url(../images/bg-intro-desktop.png);
+  }
+  #container #info {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #container #info #title {
+    width: 70%;
+    font-size: 3em;
+  }
+  #container #info #description {
+    width: 70%;
+  }
+  #container #main {
+    width: 50%;
+  }
+  #container #main #tryItFree {
+    width: 70%;
+    height: auto;
+  }
+  #container #main #form {
+    width: 70%;
+  }
+  footer {
+    position: absolute;
+    bottom: 5px;
+    background-color: black;
+    width: auto;
+  }
+  footer .attribution {
+    margin-bottom: 3px;
+    font-size: 11px;
+    text-align: center;
+  }
+  footer .attribution a {
+    color: #38cc8c;
+    text-decoration: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
