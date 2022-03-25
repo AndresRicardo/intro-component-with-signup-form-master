@@ -108,6 +108,14 @@ body {
                 border: none;
                 box-shadow: 0px 4px 0px #49ae84;
             }
+            #bSubmit:hover {
+                background-color: #25a66e;
+            }
+            #bSubmit:active {
+                background-color: $colorGreen;
+                width: 99%;
+                height: 58px;
+            }
 
             #terms {
                 color: $colorGrayishBlue;
@@ -141,30 +149,15 @@ footer {
 
 @media (min-width: 700px) {
     body {
-        // width: 100%;
-        // min-height: 100vh;
-        // display: flex;
-        // flex-direction: column;
         justify-content: center;
-        // align-items: center;
-        // background-color: black;
-        // font-family: $typFontFamily;
-        // font-size: $typFontsize;
-        // color: white;
     }
 
     #container {
         width: 100%;
-        height: 80vh;
-        // padding: 0px;
-        // display: flex;
+        height: 80%;
         flex-direction: row;
         justify-content: space-evenly;
-        // align-items: center;
-        // background-color: $colorRed;
         background-image: url(../images/bg-intro-desktop.png);
-        // background-repeat: no-repeat;
-
         #info {
             width: 50%;
             display: flex;
@@ -174,31 +167,20 @@ footer {
 
             #title {
                 width: 70%;
-                //     margin-bottom: 1.5rem;
-                //     text-align: center;
-                //     font-weight: $typWeightSemiBold;
-                //     line-height: 1.2em;
                 font-size: 3em;
             }
             #description {
                 width: 70%;
-                //     text-align: center;
-                //     margin-bottom: 0px;
             }
         }
 
         #main {
             width: 50%;
+            height: 95%;
 
             #tryItFree {
                 width: 70%;
                 height: auto;
-                // margin-bottom: 25px;
-                // padding: 18px 50px;
-                // border-radius: 15px;
-                // text-align: center;
-                // background-color: $colorBlue;
-                // box-shadow: 0px 7px 0px #55555550;
             }
             #form {
                 width: 70%;
@@ -210,15 +192,12 @@ footer {
         position: absolute;
         bottom: 5px;
         background-color: black;
-        width: auto;
+        z-index: -1;
         .attribution {
             margin-bottom: 3px;
-            font-size: 11px;
-            text-align: center;
 
             a {
                 color: $colorGreen;
-                text-decoration: none;
             }
         }
     }
