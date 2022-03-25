@@ -1,0 +1,139 @@
+// Primary color
+$colorRed: hsl(0, 100%, 74%);
+$colorGreen: hsl(154, 59%, 51%);
+
+// Accent color
+$colorBlue: hsl(248, 32%, 49%);
+
+// Neutral color
+$colorDarkBlue: hsl(249, 10%, 26%);
+$colorGrayishBlue: hsl(246, 25%, 77%);
+
+// Typography Body Copy
+$typFontsize: 16px;
+$typFontFamily: "Poppins", sans-serif; //[Poppins](https://fonts.google.com/specimen/Poppins)
+$typWeightRegular: 400;
+$typWeightMedium: 500;
+$typWeightSemiBold: 600;
+$typWeightBold: 700;
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: black;
+    font-family: $typFontFamily;
+    font-size: $typFontsize;
+    color: white;
+}
+
+#container {
+    width: 375px;
+    height: 100vh;
+    // padding: 90px 0px 0px 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $colorRed;
+    background-image: url(../images/bg-intro-mobile.png);
+    background-repeat: no-repeat;
+
+    #info {
+        width: 90%;
+
+        #title {
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-weight: $typWeightSemiBold;
+            line-height: 1.2em;
+        }
+        #description {
+            text-align: center;
+            margin-bottom: 0px;
+        }
+    }
+
+    #main {
+        width: 90%;
+
+        #tryItFree {
+            width: 100%;
+            height: 85px;
+            margin-bottom: 25px;
+            padding: 18px 50px;
+            border-radius: 15px;
+            text-align: center;
+            background-color: $colorBlue;
+            box-shadow: 0px 7px 0px #55555550;
+        }
+        #form {
+            width: 100%;
+            background-color: white;
+            border-radius: 15px;
+            padding: 15px 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .field {
+                width: 100%;
+                margin: 10px;
+            }
+
+            .form-control {
+                width: 100%;
+            }
+            .valid-feedback {
+                margin: 0px;
+            }
+
+            #bSubmit {
+                width: 100%;
+                height: 60px;
+                margin: 10px 0px;
+                font-weight: $typWeightMedium;
+                background-color: $colorGreen;
+                border: none;
+                box-shadow: 0px 4px 0px #49ae84;
+            }
+
+            #terms {
+                color: $colorGrayishBlue;
+                font-size: 0.7em;
+                text-align: center;
+
+                strong {
+                    color: $colorRed;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    // margin-top: auto;
+    background-color: $colorRed;
+    width: 375px;
+    .attribution {
+        margin-bottom: 3px;
+        font-size: 11px;
+        text-align: center;
+
+        a {
+            color: $colorBlue;
+            text-decoration: none;
+        }
+    }
+}
